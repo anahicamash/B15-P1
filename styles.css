@@ -16,7 +16,6 @@ nav{
 nav ul{
     display: flex;
     justify-content: flex-end;
-    background-color: blueviolet;
     
 }
 
