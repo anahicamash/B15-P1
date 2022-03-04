@@ -1,28 +1,31 @@
 body{
-    background-color:#BEC3EB ;
     margin: 0%;
+    font-family: 'League Spartan', sans-serif;
 }
 
-#profile-image:hover{
-    opacity: 0.8;
-    transition: .5s ease;
-}
 nav{
     background-color: white;
     width: 100%;
-    margin: 0%;
-    
+    display: flex;
+    align-items: center;
 }
+.logo{
+    font-size: 25px;
+    margin-left: 1%;
+}
+
 nav ul{
     display: flex;
+    flex-direction: row;
     justify-content: flex-end;
-    
+    align-items: center;
+    width: 40%;
+    margin-left: auto;
 }
 
 nav li{
     list-style: none;
     margin: 2%;
-    
 }
 
 a{
@@ -30,11 +33,89 @@ a{
     color: black;
 }
 
-.container-first {
-    background: lightcoral;
+#profile{
+    float: left;
+    position: absolute;
+    background-color: #BEC3EB;
+    width: 20vw;
+    margin-left: 10vw;
+    margin-top: 11vh;
+    padding: 1% 0% 0% 0%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-shadow:
+    inset 0 1em 1em rgba(0,0,0,0),
+          0.1em 0.1em 1em rgba(0,0,0,0.1);
+   
+}
+
+#profile h2{
+    margin-bottom: 0%;
+}
+
+#profile img{
+    width: 13vw;
+}
+
+#profile #white{
+background-color: white;
+width: 100%;
+height: 10px;
+
+}
+
+#container-main{
+    display: flex;
+}
+
+#container-left{
+    background-color: #BEC3EB;
+    width: 30vw;
+    height: 80vh;
+}
+
+#container-right {
+    background-color: rgb(255, 254, 255);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    padding-top: 8vw;
+    padding-left: 13vw;
+    padding-right: 8vw;
+    font-size: large;
 }
+
+#description-buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+}
+
+#description-buttons .description-button{
+    border-radius: 4px;
+    padding: 0% 10%;
+    font-family: "Netflix Sans";
+    font-weight: bold;
+    font-family: 'League Spartan', sans-serif;
+}
+
+#description-buttons #resume-button{
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    border:solid #BEC3EB;
+}
+
+#description-buttons #projects-button{
+    background-color:  #BEC3EB;
+    color: #ffffff;
+    margin-left: 3%;
+    border:solid #BEC3EB;
+}
+
+
 
